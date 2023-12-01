@@ -1,0 +1,51 @@
+# nile.toml file generated for mpangular on 2023-12-01T12:44:05+05:30
+
+app = "mpangular"
+id = "0cb91634a6b45b09097446a599be626af231502729f3f2b5dde7cdc416d852ad36d01161bdbb43ba7c62724b137ea097"
+
+[build]
+  builtin = "static angular"
+
+kill_signal = "SIGINT"
+kill_timeout = 5
+
+[env]
+
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
+
+[[services]]
+  external_port = 80
+  http_checks = []
+  internal_port = 80
+  protocol = "tcp"
+  routing_policy = "Latency"
+  script_checks = []
+
+  [services.concurrency]
+    hard_limit = 25
+    soft_limit = 20
+    type = "connections"
+
+  [services.limits]
+    cpu = "1"
+    memory = "256"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
+
+  [services.requests]
+    cpu = "0.5"
+    memory = "128"
+
+  [[services.tcp_checks]]
+    grace_period = "1s"
+    interval = "15s"
+    restart_limit = 6
+    timeout = "2s"
