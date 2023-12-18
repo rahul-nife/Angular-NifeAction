@@ -1,7 +1,7 @@
-# nile.toml file generated for mpangular on 2023-12-01T12:44:05+05:30
+# nile.toml file generated for angulargtact on 2023-12-18T13:44:13+05:30
 
-app = "mpangular"
-id = "0cb91634a6b45b09097446a599be626af231502729f3f2b5dde7cdc416d852ad36d01161bdbb43ba7c62724b137ea097"
+app = "angulargtact"
+id = "1e9cea5370de972e670121ce6775be852fdcad24753eeb6da680911f635843bdf67045096c119dcf5fc289ba024fe5f7"
 
 [build]
   builtin = "static angular"
@@ -20,7 +20,7 @@ kill_timeout = 5
   http_checks = []
   internal_port = 80
   protocol = "tcp"
-  routing_policy = "Latency"
+  routing_policy = "Geolocation"
   script_checks = []
 
   [services.concurrency]
