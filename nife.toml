@@ -1,7 +1,6 @@
 #   nile.toml file generated for musing-hodgkin2 on 2024-01-08T16:39:53+05:30
 
 app = "musing-hodgkin2"
-github = "/archive/refs/heads/.zip"
 id = "2e9a565b23094c9fe219c2d90db12109526078800d5b373b9815ab0788d19cca8d41e65ea734f2902f1015fb8866dd39"
 
 [build]
