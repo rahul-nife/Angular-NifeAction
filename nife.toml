@@ -1,7 +1,8 @@
-# nile.toml file generated for angulargtact on 2023-12-18T13:44:13+05:30
+# nile.toml file generated for musing-hodgkin2 on 2024-01-08T16:39:53+05:30
 
-app = "angulargtact"
-id = "1e9cea5370de972e670121ce6775be852fdcad24753eeb6da680911f635843bdf67045096c119dcf5fc289ba024fe5f7"
+app = "musing-hodgkin2"
+github = "/archive/refs/heads/.zip"
+id = "2e9a565b23094c9fe219c2d90db12109526078800d5b373b9815ab0788d19cca8d41e65ea734f2902f1015fb8866dd39"
 
 [build]
   builtin = "static angular"
